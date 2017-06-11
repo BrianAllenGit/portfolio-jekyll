@@ -1,0 +1,407 @@
+
+html, body{
+	overflow-x: hidden;
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+	background-color: #cf6766;
+/*	background-color: #f4f4f4;
+*/
+}
+header{
+	z-index: 20;
+		background-color: #cf6766;
+	    height:720px;
+	    display: flex;
+	    flex-direction: column;
+	    	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.hero-text{
+	font-family: 'Bungee Shade', cursive;
+/*	color:#c0b283;
+*/	
+	color:#031434;
+	font-size: 8vw;
+}
+
+.about{
+	max-width: 800px;
+}
+.about p{
+	font-family: 'Raleway', sans-serif;
+	line-height: 25px;
+}
+.slogan{
+	font-family: 'Raleway', sans-serif;
+
+	font-weight: 800;
+	font-size: 3.2em;
+	color: #031434;
+}
+/*dcd0c0
+373737*/
+
+.trunk,
+.trunk div {
+/*  background: #373737;
+*/  
+	background: #30415d;
+  will-change: transform;
+  width: 105px;
+  height: 8.75px;
+  position: absolute;
+  margin-left: 8.75px;
+  -webkit-animation-name: rot;
+          animation-name: rot;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-transform-origin: 4.375px 4.375px;
+          transform-origin: 4.375px 4.375px;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.trunk.trunk,
+.trunk div.trunk {
+  bottom: 0;
+  right:50%;
+  left:50%;
+  -webkit-animation-name: rot-root;
+          animation-name: rot-root;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+.trunk >div,
+.trunk div >div {
+  top: 0;
+  left: 87.5px;
+  -webkit-animation-duration: calc((inherit / 2));
+          animation-duration: calc((inherit / 2));
+}
+.trunk >div:nth-child(2),
+.trunk div >div:nth-child(2) {
+  -webkit-animation-name: rot-inv;
+          animation-name: rot-inv;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+}
+@-webkit-keyframes rot {
+  from {
+    -webkit-transform: rotate(15deg) scale(0.72);
+            transform: rotate(15deg) scale(0.72);
+  }
+  to {
+    -webkit-transform: rotate(45deg) scale(0.72);
+            transform: rotate(45deg) scale(0.72);
+  }
+}
+@keyframes rot {
+  from {
+    -webkit-transform: rotate(15deg) scale(0.72);
+            transform: rotate(15deg) scale(0.72);
+  }
+  to {
+    -webkit-transform: rotate(45deg) scale(0.72);
+            transform: rotate(45deg) scale(0.72);
+  }
+}
+@-webkit-keyframes rot-inv {
+  from {
+    -webkit-transform: rotate(-45deg) scale(0.72);
+            transform: rotate(-45deg) scale(0.72);
+  }
+  to {
+    -webkit-transform: rotate(-15deg) scale(0.72);
+            transform: rotate(-15deg) scale(0.72);
+  }
+}
+@keyframes rot-inv {
+  from {
+    -webkit-transform: rotate(-45deg) scale(0.72);
+            transform: rotate(-45deg) scale(0.72);
+  }
+  to {
+    -webkit-transform: rotate(-15deg) scale(0.72);
+            transform: rotate(-15deg) scale(0.72);
+  }
+}
+@-webkit-keyframes rot-root {
+  from {
+    -webkit-transform: rotate(-95deg);
+            transform: rotate(-95deg);
+  }
+  to {
+    -webkit-transform: rotate(-85deg);
+            transform: rotate(-85deg);
+  }
+}
+@keyframes rot-root {
+  from {
+    -webkit-transform: rotate(-95deg);
+            transform: rotate(-95deg);
+  }
+  to {
+    -webkit-transform: rotate(-85deg);
+            transform: rotate(-85deg);
+  }
+}
+
+.links{
+	justify-content: center;
+	align-items: center;
+	padding-top: 25px;
+	background-color:#8eaebd;
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	position: relative;
+    margin-bottom: 13%;
+    z-index: 50;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      text-align: center;
+
+}
+.projects{
+	flex:1;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 460px;
+  margin: 1rem;
+  position: relative;
+  width: 430px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.description{
+	padding: 15px 20px;
+}
+.description h2{
+	margin:0;
+	/*font-family: 'Roboto', sans-serif;
+    font-weight: 300;*/
+    font-family: 'Raleway', sans-serif;
+    color: #031434;
+}
+.description h3{
+    font-size: 10px;
+    /*font-family: Roboto,sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+    color: #bec9ce;;
+}
+.Scannly{
+	background: url("/imgs/scannly.png") no-repeat center;
+	background-size: contain;
+	height:75%;
+	border-radius: 2px;
+
+}
+.Scannlyapp{
+	background: url("/imgs/scannlyapp.jpg") center;
+	background-size: cover;
+	height:75%;
+	border-radius: 2px;
+
+
+}
+.Envirovacs{
+	background: url("/imgs/envirovacs.png") no-repeat center;
+	background-size: contain;
+	height:75%;
+	border-radius: 2px;
+}
+
+footer {
+    position: fixed;
+        margin-bottom: 50px;
+    width: 100%; height: 15%;
+    bottom:0; left: 0px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.external-links{
+	justify-content: center;
+    display: flex;
+    align-items: center;
+	position: fixed;
+	z-index: 12;
+	bottom:0;
+	width: 100%;
+	height:50px;
+	background-color: #d37675;
+}
+.external-links a {
+	color: #031434;
+	display: inline-block;
+    padding: 0 15px;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+/*#clouds{
+	padding: 100px 0;
+	background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}*/
+
+/*Time to finalise the cloud shape*/
+#clouds{
+	height: 0px;
+}
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
+@media only screen and (max-width: 860px) {
+	header{
+		    height: 450px;
+		    justify-content: flex-start;
+	}
+	.about p{
+		padding:10px;
+	}
+	.links{
+		margin-bottom: 30%;
+	}
+	#clouds{
+		display: none;
+	}
+	.projects{
+		flex-direction: column;
+	}
+	.card{
+		width: auto;
+	}
+	.external-links a {
+	    font-size: 14px;
+	}
+	.slogan{
+		font-size: 2.5em;
+	}
+}

@@ -1,0 +1,19 @@
+---
+title: WhatDirection
+permalink: /projects/personal/whatdirection
+layout: project
+---
+<h1>WhatDirection</h1>
+<div class="header-image WhatDirectionHeader"></div>
+<h1>What is it?</h1>
+<div class="project-description">
+	<p>WhatDirection is a simple app to get the "as the crow flies" direction to a destination. First, you pick a destination. Then, when you face that direction, the phone will vibrate.  There is a sensitivity meter to widen or shorten the range.</p>
+</div>
+<h1>How does it work?</h1>
+<div class="project-description">
+	<p>The app gathers two bearing coordinates. </br></br>The app gets your current location's longitude and latitude.  When you select a destination, the app retrieves the the longitude and latitude of the destination.  The app uses the haversine formula to convert both pairs of coordinates into a bearing.</br></br>The app then uses the phone's magnetometer to determine magnetic north in relation to your phone.  It converts the results of the magnetometer into a bearing.</br></br>The app then will buzz when the bearings are close, according to your sensitivity.  A stronger sensitivity simply shortens the window in which the two bearings are considered close. 
+	</p>
+</div>
+
+<a href='https://play.google.com/store/apps/details?id=com.snapwebdevelopment.brian.whatdirection&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
